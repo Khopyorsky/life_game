@@ -50,12 +50,8 @@ a, table {
     margin: 20px 3px 3px;
     padding: 5px;
     font-family: "Book Antiqua", "Arial";
-    background: aliceblue;
     font-size: 30px;
-    border: 1px solid indigo;
-    border-radius: 50%;
 }
-
 
 .btn {
     display: inline-block;

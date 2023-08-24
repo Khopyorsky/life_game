@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from game_of_life import GameOfLife
+from game_config import game
 
 app = Flask(__name__)
 
@@ -11,5 +11,5 @@ def index():
 
 @app.route('/life')
 def life():
-    game = GameOfLife()
-    return render_template('life.html')
+    game.form_new_generation()
+    return render_template('life.html', game=game)
