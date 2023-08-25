@@ -2,7 +2,7 @@ from threading import Lock
 
 
 class SingletonMeta(type):
-    _instances = {}
+    _instances: dict[type, object] = {}
     _lock: Lock = Lock()
 
     def __call__(cls, *args, **kwargs):

@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    game.create_new_world()
     return render_template('index.html')
 
 
@@ -13,3 +14,4 @@ def index():
 def life():
     game.form_new_generation()
     return render_template('life.html', game=game)
+

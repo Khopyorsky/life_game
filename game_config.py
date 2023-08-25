@@ -4,5 +4,5 @@ from environs import Env
 env = Env()
 env.read_env()
 
-game = GameOfLife(width=int(env('WIDTH')),
-                  height=int(env('HEIGHT')))
+game: GameOfLife = GameOfLife(width=int(env('WIDTH')),
+                              height=int(env('HEIGHT')))
